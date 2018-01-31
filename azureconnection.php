@@ -23,7 +23,8 @@ if (!$link) {
     exit;
 }
 
-echo "<p>Success: A proper connection to MySQL was made! The database is $connectstr_dbname</p>";
+echo "<p>Success: A proper connection to MySQL was made!</p>";
+echo "<p>The database is $connectstr_dbname</p>";
 echo "<p>connectstr_dbhost = $connectstr_dbhost</p>";
 echo "<p>Host information: " . mysqli_get_host_info($link) . "</p>";
 echo "<p>connectstr_dbusername: $connectstr_dbusername</p>";
