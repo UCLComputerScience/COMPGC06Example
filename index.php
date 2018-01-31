@@ -1,7 +1,8 @@
-<?php include 'database.php'; ?>
+
+<?php include 'azureconnection.php'; ?>
 <?php 
   $query = "SELECT * FROM messages ORDER BY id DESC";
-  $messages = mysqli_query($connection, $query);
+  $messages = mysqli_query($link, $query);
 ?>
 <!doctype html>
 <html>
