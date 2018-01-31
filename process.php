@@ -1,5 +1,5 @@
 <?php
-  include 'azureconnection.php.php';
+  include 'azureconnection.php';
 
   if (isset($_POST['submit'])) {
     $user = mysqli_real_escape_string($link, $_POST['user']);
@@ -25,4 +25,5 @@
       }
     }
   }
+  mysqli_close($link);
 ?>
