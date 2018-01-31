@@ -24,7 +24,7 @@ if (!$link) {
     exit;
 }
 
-echo "Success: A proper connection to MySQL was made! The database is".$connectstr_dbname." . PHP_EOL;
+echo "Success: A proper connection to MySQL was made! The database is $connectstr_dbname"  . PHP_EOL;
 echo "connectstr_dbhost = $connectstr_dbhost";
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
 
