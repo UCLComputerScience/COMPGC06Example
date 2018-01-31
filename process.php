@@ -6,7 +6,7 @@
     $message = mysqli_real_escape_string($link, $_POST['message']);
 
     date_default_timezone_set('Europe/London');
-    $time = date('h:i:s a', time());
+    $time = date('h:i:s', time());
 
     if (!isset($user) || $user == '' || !isset($message) || $message == '') {
       $error = "Please fill in your name and a message";
